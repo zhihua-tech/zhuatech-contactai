@@ -1,5 +1,9 @@
 [简体中文](README.md) | **English**
 
+## Functional update: Conversation timeline metrics
+
+Calculates speech coverage, silence, overlap and customer-to-agent response gaps from authorized turn timestamps. No emotion or employee-performance inference is performed. Available to signed-in users with editable inputs, explicit validation and JSON export. See [API, examples and limitations](docs/AI_BUSINESS_UPGRADE_20261023.md). No external model calls or automatic business changes. Existing license and contact details are retained.
+
 # ZhuaTech Contactai
 
 > A source-available enterprise project by [ZhuaTech](https://www.zhuatech.cn/) for customer, sales, marketing, channel, and service operations.
