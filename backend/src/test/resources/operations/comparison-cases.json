@@ -1,0 +1,76 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "REVIEW",
+      "workloadMinutes": "#400",
+      "averageHandlingWithWrap": "#8"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "REVIEW",
+      "workloadMinutes": "#400",
+      "averageHandlingWithWrap": "#8"
+    }
+  },
+  {
+    "patch": {
+      "handlingMinutes": "321"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "REVIEW",
+      "workloadMinutes": "#400",
+      "averageHandlingWithWrap": "#8"
+    }
+  },
+  {
+    "patch": {
+      "handlingMinutes": "278"
+    },
+    "expected": {
+      "decision": "PASS",
+      "occupancyPct": "#90"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "REVIEW",
+      "workloadMinutes": "#400",
+      "averageHandlingWithWrap": "#8"
+    }
+  },
+  {
+    "patch": {
+      "conversations": "0",
+      "handlingMinutes": "0"
+    },
+    "expected": {
+      "decision": "PASS",
+      "averageHandlingWithWrap": "N/A"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "REVIEW",
+      "workloadMinutes": "#400",
+      "averageHandlingWithWrap": "#8"
+    }
+  },
+  {
+    "patch": {
+      "wrapMinutesEach": "0"
+    },
+    "expected": {
+      "decision": "PASS",
+      "workloadMinutes": "#300"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "REVIEW",
+      "workloadMinutes": "#400",
+      "averageHandlingWithWrap": "#8"
+    }
+  }
+]
