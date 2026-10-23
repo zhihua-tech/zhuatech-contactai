@@ -1,0 +1,65 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "REVIEW",
+      "workloadMinutes": "#400",
+      "averageHandlingWithWrap": "#8"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "handlingMinutes": "321"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "handlingMinutes": "278"
+    },
+    "expected": {
+      "decision": "PASS",
+      "occupancyPct": "#90"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "breakMinutes": "240"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "conversations": "0",
+      "handlingMinutes": "0"
+    },
+    "expected": {
+      "decision": "PASS",
+      "averageHandlingWithWrap": "N/A"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "agents": "0"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "wrapMinutesEach": "0"
+    },
+    "expected": {
+      "decision": "PASS",
+      "workloadMinutes": "#300"
+    },
+    "error": false
+  }
+]
